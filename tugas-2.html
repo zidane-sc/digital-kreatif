@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 Digital Kreatif — Muhammad Zidane Sc (19231022)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #090d16;
+            color: #e2e8f0;
+        }
+        .prose-custom p {
+            line-height: 1.8;
+            margin-bottom: 1.25rem;
+            color: #cbd5e1;
+            font-size: 1.05rem;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-accent {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.15);
+        }
+    </style>
+</head>
+<body class="min-h-screen antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Top Navigation Bar -->
+    <nav class="sticky top-0 z-50 glass-card border-b border-slate-800/80 px-4 py-3">
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                    UBSI KALIABANG
+                </span>
+                <span class="text-sm font-medium text-slate-300 hidden sm:inline">0689 Digital Kreatif</span>
+            </div>
+            <!-- Assignment Switcher Tabs -->
+            <div class="flex items-center space-x-2 text-xs">
+                <a href="index.html" class="px-3 py-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/80 transition">
+                    Tugas 1
+                </a>
+                <a href="tugas-2.html" class="px-3 py-1.5 rounded-lg bg-indigo-600 text-white font-semibold shadow-sm">
+                    Tugas 2
+                </a>
+                <span class="font-mono bg-slate-800/80 px-2 py-1 rounded text-slate-300 ml-2 hidden sm:inline">19231022</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto px-4 py-10 sm:py-16">
+        
+        <!-- Header Section -->
+        <header class="mb-14">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-4">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse"></span>
+                Tugas 2 Perkuliahan (Kelompok / Perorangan)
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                Kecerdasan Buatan dan Transformasi Industri Kreatif Digital
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl leading-relaxed mb-8">
+                Analisis mendalam mengenai efisiensi alur kerja, masa depan desain grafis, produksi audio-visual sintetis, regulasi etika & hak cipta, proyeksi ekonomi kreatif, serta studi kasus penulisan kreatif.
+            </p>
+
+            <!-- Metadata Profile Card -->
+            <div class="glass-card rounded-2xl p-6 glow-accent">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                    <div>
+                        <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold block mb-1">Nama Mahasiswa</span>
+                        <span class="font-semibold text-white">Muhammad Zidane Sc</span>
+                    </div>
+                    <div>
+                        <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold block mb-1">Nomor Induk (NIM)</span>
+                        <span class="font-mono font-medium text-indigo-400">19231022</span>
+                    </div>
+                    <div>
+                        <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold block mb-1">Mata Kuliah</span>
+                        <span class="text-slate-200">Digital Kreatif (0689)</span>
+                    </div>
+                    <div>
+                        <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold block mb-1">Dosen Pengampu</span>
+                        <span class="text-slate-200">YDK (Kode MTK: 0689)</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Table of Contents -->
+        <section class="glass-card rounded-2xl p-6 mb-14 border border-slate-800">
+            <h2 class="text-xs uppercase font-bold tracking-wider text-slate-400 mb-4 flex items-center gap-2">
+                <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                Daftar Enam Soal Analisis
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                <a href="#soal-1" class="text-slate-300 hover:text-indigo-400 transition flex items-center gap-2">
+                    <span class="text-xs font-mono text-indigo-400 font-bold">01.</span> Konsep Dasar & Efisiensi Alur Kerja
+                </a>
+                <a href="#soal-2" class="text-slate-300 hover:text-indigo-400 transition flex items-center gap-2">
+                    <span class="text-xs font-mono text-indigo-400 font-bold">02.</span> Desain Grafis & Generative AI
+                </a>
+                <a href="#soal-3" class="text-slate-300 hover:text-indigo-400 transition flex items-center gap-2">
+                    <span class="text-xs font-mono text-indigo-400 font-bold">03.</span> Konten Audio-Visual & Personalisasi
+                </a>
+                <a href="#soal-4" class="text-slate-300 hover:text-indigo-400 transition flex items-center gap-2">
+                    <span class="text-xs font-mono text-indigo-400 font-bold">04.</span> Etika, Hak Cipta, & Deepfake
+                </a>
+                <a href="#soal-5" class="text-slate-300 hover:text-indigo-400 transition flex items-center gap-2">
+                    <span class="text-xs font-mono text-indigo-400 font-bold">05.</span> Prediksi Masa Depan Ekonomi Kreatif
+                </a>
+                <a href="#soal-6" class="text-slate-300 hover:text-indigo-400 transition flex items-center gap-2">
+                    <span class="text-xs font-mono text-indigo-400 font-bold">06.</span> Skenario Film, Copywriting, & Emosi
+                </a>
+            </div>
+        </section>
+
+        <!-- ARTICLE SECTIONS -->
+        <div class="space-y-20 prose-custom">
+
+            <!-- SOAL 1 -->
+            <section id="soal-1" class="scroll-mt-24">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center font-bold text-sm border border-indigo-500/30">1</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Konsep Dasar dan Efisiensi Alur Kerja</h2>
+                </div>
+
+                <p>
+                    Penerapan Artificial Intelligence (AI) dalam industri kreatif digital mengubah paradigma produksi dari model sekuensial padat-karya (<em>labor-intensive</em>) menjadi model iteratif-teraugmentasi (<em>AI-augmented iterative workflow</em>). AI beroperasi sebagai akselerator pada tiga dimensi utama:
+                </p>
+
+                <!-- Hero Image 1 -->
+                <figure class="my-8 rounded-2xl overflow-hidden glass-card border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80" 
+                         alt="Akselerasi Alur Kerja Kreatif Berbasis AI" 
+                         class="w-full h-64 sm:h-80 object-cover">
+                    <figcaption class="p-3 text-xs text-slate-400 text-center bg-slate-900/90 border-t border-slate-800">
+                        Gambar 1: Otomasi proses komputasi cerdas yang melipatgandakan throughput produksi kreatif (Sumber: Cash Macanaya / Unsplash).
+                    </figcaption>
+                </figure>
+
+                <!-- 2 Concrete Examples Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                    <div class="glass-card rounded-xl p-6 border-l-4 border-l-amber-500">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-amber-400">Tahap Praproduksi</h3>
+                            <span class="text-xs font-mono bg-amber-950/80 text-amber-300 px-2 py-0.5 rounded border border-amber-800">Concept Art & Storyboard</span>
+                        </div>
+                        <p class="text-xs text-slate-300 mb-3">
+                            <strong>Problem:</strong> Ilustrasi manual sketsa adegan, penentuan sudut kamera, dan pengujian palet warna memakan waktu berminggu-minggu sebelum persetujuan sutradara/klien.
+                        </p>
+                        <p class="text-xs text-slate-400 bg-slate-900/90 p-3 rounded-lg border border-slate-800 font-mono">
+                            <strong>Solusi AI:</strong> Melalui Midjourney, Krea AI, atau ControlNet, tim sutradara memasukkan prompt sinematografi spesifik untuk mengenerasi 50+ alternatif storyboard, desain kostum, dan moodboard visual dalam hitungan jam.
+                        </p>
+                    </div>
+
+                    <div class="glass-card rounded-xl p-6 border-l-4 border-l-emerald-500">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-emerald-400">Tahap Produksi</h3>
+                            <span class="text-xs font-mono bg-emerald-950/80 text-emerald-300 px-2 py-0.5 rounded border border-emerald-800">Neural Rotoscoping</span>
+                        </div>
+                        <p class="text-xs text-slate-300 mb-3">
+                            <strong>Problem:</strong> Rotoscoping (pemisahan objek dari latar belakang frame-by-frame) pada pascaproduksi video adalah tugas repetitif paling melelahkan.
+                        </p>
+                        <p class="text-xs text-slate-400 bg-slate-900/90 p-3 rounded-lg border border-slate-800 font-mono">
+                            <strong>Solusi AI:</strong> Menggunakan Runway AI Magic Tools (Green Screen AI) atau Adobe Sensei, komputer melacak tepian objek dinamis (rambut, pakaian) otomatis dalam menit, menghemat hingga 80% jam kerja editor.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SOAL 2 -->
+            <section id="soal-2" class="scroll-mt-24">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center font-bold text-sm border border-indigo-500/30">2</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Desain Grafis dan Generative AI: Subtitusi atau Augmentasi?</h2>
+                </div>
+
+                <p>
+                    Generative AI (Midjourney, DALL-E 3, Adobe Firefly) memicu perdebatan eksistensial. Berdasarkan analisis komunikasi visual dan ekonomi desain, <strong>AI tidak menggantikan desainer grafis</strong>, melainkan meredefinisi perannya dari operator teknis menjadi sutradara kreatif.
+                </p>
+
+                <!-- Hero Image 2 -->
+                <figure class="my-8 rounded-2xl overflow-hidden glass-card border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80" 
+                         alt="Seni Generatif dan Eksplorasi Visual" 
+                         class="w-full h-64 sm:h-80 object-cover">
+                    <figcaption class="p-3 text-xs text-slate-400 text-center bg-slate-900/90 border-t border-slate-800">
+                        Gambar 2: Sinergi manusia dan algoritma komputasi dalam eksplorasi batas-batas estetika baru (Sumber: Milad Fakurian / Unsplash).
+                    </figcaption>
+                </figure>
+
+                <!-- Core Arguments Visual Grid -->
+                <div class="glass-card rounded-2xl p-6 my-8 border border-slate-800">
+                    <h3 class="text-sm uppercase tracking-wider text-indigo-400 font-bold mb-6">Tiga Bukti Kuat AI sebagai Alat Bantu (Force Multiplier)</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-800">
+                            <div class="text-xl font-bold text-white mb-2">01. Ketiadaan Intensi</div>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                AI hanya merangkai piksel probabilitas statistik. AI tidak memahami <em>mengapa</em> ruang kosong (negative space) diperlukan, nilai psikologis merek, atau etika kampanye klien.
+                            </p>
+                        </div>
+                        <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-800">
+                            <div class="text-xl font-bold text-white mb-2">02. Kebutuhan Taste</div>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Siapa pun bisa menghasilkan visual estetik dalam 10 detik, tetapi hanya desainer terdidik yang mampu mengurasi apakah visual tersebut taat pada grid, hierarki, dan identitas brand.
+                            </p>
+                        </div>
+                        <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-800">
+                            <div class="text-xl font-bold text-white mb-2">03. Paradigma Centaur</div>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Model kolaborasi manusia + AI melahirkan <em>Centaur Designer</em>, di mana desainer mampu mengeksekusi visual kompleks yang sebelumnya mustahil dikerjakan dalam batas tenggat waktu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SOAL 3 -->
+            <section id="soal-3" class="scroll-mt-24">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center font-bold text-sm border border-indigo-500/30">3</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Konten Audio-Visual dan Personalisasi Pemasaran</h2>
+                </div>
+
+                <!-- Hero Image 3 -->
+                <figure class="my-8 rounded-2xl overflow-hidden glass-card border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80" 
+                         alt="Produksi Sinematografi dan Audio-Visual Modern" 
+                         class="w-full h-64 sm:h-80 object-cover">
+                    <figcaption class="p-3 text-xs text-slate-400 text-center bg-slate-900/90 border-t border-slate-800">
+                        Gambar 3: Kamera sinema modern yang kini terintegrasi dengan pipeline sintesis AI (Sumber: Kyle Loftus / Unsplash).
+                    </figcaption>
+                </figure>
+
+                <div class="space-y-6">
+                    <div class="glass-card p-6 rounded-xl border border-slate-800">
+                        <h3 class="text-lg font-bold text-white mb-2">A. Transformasi Produksi Audio-Visual</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed mb-3">
+                            AI merobohkan batasan fisik syuting film. Dengan <strong>ElevenLabs Voice Cloning</strong> dan penyelarasan gerak bibir sintetis (<strong>Wav2Lip / HeyGen</strong>), konten video dapat dialihsuarakan ke 40+ bahasa secara fotorealistis menggunakan suara asli aktor. Di ranah sinema, de-aging digital dan penggantian wajah (deepfake berlisensi) memangkas biaya makeup prostetik dan adegan berbahaya.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-xl border border-slate-800">
+                        <h3 class="text-lg font-bold text-white mb-2">B. Konsep "Personalisasi Konten" dalam Digital Marketing</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed mb-3">
+                            Personalisasi konten berbasis AI diwujudkan melalui sistem <strong>Dynamic Creative Optimization (DCO)</strong>. Alih-alih membuat satu video iklan generik, mesin AI merakit komponen iklan secara modular dan real-time:
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs font-mono text-slate-300">
+                            <div class="bg-slate-900 p-3 rounded border border-slate-800">
+                                <span class="text-indigo-400 block font-bold mb-1">Modular Audio</span>
+                                Nama audiens atau kota domisili diucapkan langsung oleh narator AI.
+                            </div>
+                            <div class="bg-slate-900 p-3 rounded border border-slate-800">
+                                <span class="text-indigo-400 block font-bold mb-1">Dynamic Visual</span>
+                                Produk yang ditampilkan otomatis berganti sesuai riwayat keranjang belanja.
+                            </div>
+                            <div class="bg-slate-900 p-3 rounded border border-slate-800">
+                                <span class="text-indigo-400 block font-bold mb-1">Adaptive Hook</span>
+                                3 detik pertama video dioptimasi berdasarkan preferensi konten medsos audiens.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SOAL 4 -->
+            <section id="soal-4" class="scroll-mt-24">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center font-bold text-sm border border-indigo-500/30">4</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Etika, Hak Cipta, dan Regulasi Deepfake</h2>
+                </div>
+
+                <!-- Hero Image 4 -->
+                <figure class="my-8 rounded-2xl overflow-hidden glass-card border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80" 
+                         alt="Keseimbangan Hukum dan Etika Kekayaan Intelektual" 
+                         class="w-full h-64 sm:h-80 object-cover">
+                    <figcaption class="p-3 text-xs text-slate-400 text-center bg-slate-900/90 border-t border-slate-800">
+                        Gambar 4: Timbangan keadilan dan kepatuhan hukum dalam ekosistem hak cipta kecerdasan buatan (Sumber: Tingey Injury Law Firm / Unsplash).
+                    </figcaption>
+                </figure>
+
+                <div class="space-y-6">
+                    <div class="glass-card p-6 rounded-xl border border-slate-800">
+                        <h3 class="text-lg font-bold text-rose-400 mb-2">A. Dilema Hak Cipta: Kreator vs Pengembang AI</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed mb-3">
+                            Konflik berakar pada klaim pengembang AI bahwa *web scraping* jutaan karya berhak cipta (seperti pada Common Crawl / LAION-5B) dilindungi oleh doktrin <em>fair use</em>. Sebaliknya, para seniman menganggap pelatihan model komersial tanpa izin (<em>consent</em>), tanpa kredit (<em>credit</em>), dan tanpa royalti (<em>compensation</em>) merupakan eksploitasi data ilegal, terutama saat model AI dapat meniru gaya visual khas seorang seniman (<em>style cloning</em>) dan merebut pangsa pasar komersialnya.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-xl border border-slate-800">
+                        <h3 class="text-lg font-bold text-sky-400 mb-2">B. Solusi Tata Kelola & Regulasi Berkelanjutan</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+                            <div class="bg-slate-900 p-4 rounded-lg border border-slate-800">
+                                <span class="font-bold text-white block mb-1">1. Opt-in & Transparansi Data</span>
+                                Mewajibkan pengembang membuka audit dataset latih dan menerapkan sistem *opt-in/opt-out* yang mengikat secara hukum bagi seniman.
+                            </div>
+                            <div class="bg-slate-900 p-4 rounded-lg border border-slate-800">
+                                <span class="font-bold text-white block mb-1">2. Skema Lisensi Kolektif</span>
+                                Mengadopsi royalti berbasis konsorsium (seperti model Adobe Firefly) di mana kreator penyumbang data latih menerima bagi hasil berkala.
+                            </div>
+                            <div class="bg-slate-900 p-4 rounded-lg border border-slate-800">
+                                <span class="font-bold text-white block mb-1">3. Standar Provenansi C2PA</span>
+                                Wajib menyematkan watermark kriptografis dan metadata C2PA pada media sintetis guna memberantas disinformasi dan impersonasi deepfake.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SOAL 5 -->
+            <section id="soal-5" class="scroll-mt-24">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center font-bold text-sm border border-indigo-500/30">5</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Prediksi Masa Depan Ekonomi Kreatif</h2>
+                </div>
+
+                <div class="p-4 rounded-xl bg-indigo-950/40 border border-indigo-500/30 text-indigo-200 text-sm mb-6 italic">
+                    "AI tidak akan menggantikan kreator, tetapi kreator yang menggunakan AI akan menggantikan kreator yang tidak menggunakan AI."
+                </div>
+
+                <!-- Hero Image 5 -->
+                <figure class="my-8 rounded-2xl overflow-hidden glass-card border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" 
+                         alt="Kolaborasi Tim Kreatif Masa Depan" 
+                         class="w-full h-64 sm:h-80 object-cover">
+                    <figcaption class="p-3 text-xs text-slate-400 text-center bg-slate-900/90 border-t border-slate-800">
+                        Gambar 5: Kreator masa depan mengombinasikan kecerdasan buatan dengan kepekaan empati dan kepemimpinan strategis (Sumber: Annie Spratt / Unsplash).
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Strategi menghadapi era baru ini bukan sekadar menjadi mahir menulis prompt (*prompt engineering*), melainkan membangun <strong>empat kompetensi inti non-AI</strong> yang bernilai ekonomi tinggi:
+                </p>
+
+                <!-- Skill Matrix Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
+                    <div class="glass-card p-5 rounded-xl border border-slate-800">
+                        <div class="text-amber-400 font-mono text-xs font-bold mb-1">SKILL 1</div>
+                        <h4 class="font-bold text-white mb-2">Art Direction & Curatorial Taste</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Kemampuan membedakan karya luar biasa dari "AI slop" generik. Menguasai teori warna, ritme komposisi, dan prinsip desain formal untuk memfilter ribuan variasi hasil mesin.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-xl border border-slate-800">
+                        <div class="text-amber-400 font-mono text-xs font-bold mb-1">SKILL 2</div>
+                        <h4 class="font-bold text-white mb-2">Deep Business Context</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Memahami psikologi konversi, dinamika pasar, positioning merek, dan tujuan komersial klien sehingga produk kreatif mampu menghasilkan dampak finansial nyata.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-xl border border-slate-800">
+                        <div class="text-amber-400 font-mono text-xs font-bold mb-1">SKILL 3</div>
+                        <h4 class="font-bold text-white mb-2">Authentic Human Storytelling</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Membangun ikatan afeksi batin melalui kerentanan, humor kontekstual, dan refleksi hidup nyata yang tidak bisa disintesis oleh mesin probabilitas kata.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-xl border border-slate-800">
+                        <div class="text-amber-400 font-mono text-xs font-bold mb-1">SKILL 4</div>
+                        <h4 class="font-bold text-white mb-2">Technical Pipeline Engineering</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Kemampuan menyambungkan berbagai software industri (Unity/Unreal untuk game, Premiere/DaVinci untuk video, API backend untuk otomasi) ke dalam satu alur orkestrasi utuh.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SOAL 6 -->
+            <section id="soal-6" class="scroll-mt-24">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center font-bold text-sm border border-indigo-500/30">6</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Studi Kasus: Penulisan Skenario, Copywriting, dan Batasan Emosi</h2>
+                </div>
+
+                <!-- Hero Image 6 -->
+                <figure class="my-8 rounded-2xl overflow-hidden glass-card border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80" 
+                         alt="Proses Penulisan Naskah dan Skenario Kreatif" 
+                         class="w-full h-64 sm:h-80 object-cover">
+                    <figcaption class="p-3 text-xs text-slate-400 text-center bg-slate-900/90 border-t border-slate-800">
+                        Gambar 6: Kedalaman rasa dan artikulasi kata dalam penulisan naskah yang bersumber dari pengalaman batin manusia (Sumber: Aaron Burden / Unsplash).
+                    </figcaption>
+                </figure>
+
+                <!-- Comparative Analysis Table -->
+                <div class="overflow-x-auto my-8 glass-card rounded-2xl border border-slate-800">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-slate-900/90 text-slate-400 font-mono text-xs uppercase border-b border-slate-800">
+                            <tr>
+                                <th class="p-4">Dimensi Perbandingan</th>
+                                <th class="p-4">Penulisan Manual (Manusia)</th>
+                                <th class="p-4">Penulisan Berbantuan Model AI (LLM)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800/60 text-slate-300">
+                            <tr>
+                                <td class="p-4 font-semibold text-white">Proses & Ritme</td>
+                                <td class="p-4 text-xs">Lambat, kontemplatif, reflektif, rentan <em>writer's block</em>.</td>
+                                <td class="p-4 text-xs">Instan, eksploratif, menghasilkan 30 variasi sudut pandang dalam detik.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-semibold text-white">Karakter Bahasa (Voice)</td>
+                                <td class="p-4 text-xs">Unik, organik, memiliki keunikan dialek dan ciri khas penulis.</td>
+                                <td class="p-4 text-xs">Cenderung netral, seragam, dan memakai frasa klise umum internet.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-semibold text-white">Penanganan Subtext</td>
+                                <td class="p-4 text-xs">Kaya akan makna tersirat, jeda hening, dan lapisan psikologis.</td>
+                                <td class="p-4 text-xs">Sangat literal; emosi sering kali diucapkan secara verbal tanpa subtext.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl border border-slate-800 space-y-3">
+                    <h3 class="text-base font-bold text-indigo-400">Dua Keterbatasan Fatal AI dalam Konteks Lokal:</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        <strong>1. Kepekaan Budaya & Slang Lokal:</strong> Bahasa pergaulan Indonesia (tongkrongan Jakarta, sarkasme Sunda/Jawa, atau percampuran Indo-English) sarat dengan nuansa kontekstual sosiokultural. LLM sering kali menerjemahkannya secara kaku atau kehilangan daya humor aslinya karena dilatih dominan pada korpus teks formal.
+                    </p>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        <strong>2. Ketiadaan Pengalaman Hidup (Lived Experience):</strong> AI memprediksi kata "duka" atau "cinta" berdasarkan statistik matematis tanpa pernah merasakan kepedihan fisik atau kehangatan kasih sayang. Oleh karena itu, naskah murni AI kerap terasa melodramatis tanpa resonansi batin yang sesungguhnya.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Academic References Section -->
+        <footer class="mt-20 pt-10 border-t border-slate-800 text-sm">
+            <h3 class="text-xs uppercase tracking-wider font-bold text-slate-400 mb-6 flex items-center gap-2">
+                <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                Daftar Referensi Akademis
+            </h3>
+            <ol class="space-y-3 text-xs text-slate-400 leading-relaxed font-mono">
+                <li>[1] Manovich, L. (2018). <em>AI Aesthetics</em>. Strelka Press.</li>
+                <li>[2] Floridi, L., & Chiriatti, M. (2020). <em>GPT-3: Its Nature, Scope, Limits, and Consequences</em>. Minds and Machines, 30(4), 681-694.</li>
+                <li>[3] UNESCO. (2022). <em>Recommendation on the Ethics of Artificial Intelligence</em>. UNESCO Publishing.</li>
+                <li>[4] Elgammal, A. (2019). <em>AI is Blurring the Definition of Artist</em>. American Scientist, 107(1), 18-22.</li>
+                <li>[5] Epstein, Z., et al. (2023). <em>Art and the Science of Generative AI: A deeper dive into the emergent capabilities and limitations of creative machines</em>. Science, 380(6640), 1110-1114.</li>
+                <li>[6] World Intellectual Property Organization (WIPO). (2020). <em>WIPO Conversation on Intellectual Property (IP) and Artificial Intelligence (AI)</em>. Second Session, WIPO/IP/AI/2/GE/20/1.</li>
+            </ol>
+
+            <div class="mt-12 text-center text-xs text-slate-500">
+                &copy; 2026 Muhammad Zidane Sc — Program Studi S1 Sistem Informasi, Universitas Bina Sarana Informatika.
+            </div>
+        </footer>
+
+    </main>
+</body>
+</html>
